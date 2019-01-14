@@ -30,7 +30,8 @@ $(document).ready(function() {
                $("input[name=variantSku]").val(vars.variantSKU);
                $("input[name=varSize]").val(vars.size);
                $("input[name=quantityInput]").val(vars.quantity);
-               $('#form').attr('action').val(vars.url);
+	       $("form[name=action]").val(vars.url);
+               
                $('#form').submit();
         }
 })
