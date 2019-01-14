@@ -27,10 +27,10 @@ $(document).ready(function() {
 
         if (vars) {
                $("input[name=sku]").val(vars.SKU);
-               $("input[name=variantSku]").val(vars.varisntSKU);
+               $("input[name=variantSku]").val(vars.variantSKU);
                $("input[name=varSize]").val(vars.size);
                $("input[name=quantityInput]").val(vars.quantity);
-               $('#form').attr('action','url').val(vars.url);
+               $('#form').attr('action').val(vars.url);
                $('#form').submit();
         }
 })
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 <form name="form" id="form" action="" method="post">
 		<input hidden name="sku" value="">
-    <input hidden name="variantSku" value="">
+                <input hidden name="variantSku" value="">
 		<input hidden name="varSize" value="">
 		<input hidden name="quantityInput" value="">
 
