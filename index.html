@@ -24,14 +24,13 @@ $(document).ready(function() {
         } else {
             region = "GB"
         }
-
+	product=vars.product
         if (vars) {
                $("input[name=sku]").val(vars.SKU);
                $("input[name=variantSku]").val(vars.variantSKU);
                $("input[name=varSize]").val(vars.size);
                $("input[name=quantityInput]").val(vars.quantity);
-	       $("form[name=action]").val(vars.product);
-               
+	       $('#form').attr('action', product);
                $('#form').submit();
         }
 })
